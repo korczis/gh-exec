@@ -9,7 +9,9 @@ function main() {
         printf "\nHello World!\n"
         printf "You see this because no command was specified!\n"
     else
-        /bin/bash -c "${1}"
+        # /bin/bash -c "${1}"
+        # shellcheck disable=SC2068
+        /bin/bash -c $@
     fi
 }
 
