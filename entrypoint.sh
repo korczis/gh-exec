@@ -10,7 +10,7 @@ function main() {
         printf "You see this because no command was specified!\n"
     else
         # /bin/bash -c "${1}"
-        /bin/bash -c "$@"
+        /bin/bash -c "$*"
     fi
 }
 
