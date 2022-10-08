@@ -13,8 +13,7 @@ jobs:
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         id: hello
-        with: |
-          echo "And then revenge is very good eaten cold, as the vulgar say \~ Eugène Sue, Mathilde: Mémoires d\'une Jeune Femme"
+        with: "echo And then revenge is very good eaten cold, as the vulgar say - Eugène Sue, Mathilde: Mémoires d une Jeune Femme"
             
 
       # Use the output from the `hello` step
