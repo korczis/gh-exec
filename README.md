@@ -1,3 +1,7 @@
-# GH Exec
+# github executor 3000
 
-Sometimes the power is only answer.w
+Simple but powerfull.
+
+## Usage
+
+TODO
