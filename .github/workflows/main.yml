@@ -14,7 +14,7 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          exec: "echo And then revenge is very good eaten cold, as the vulgar say!\n\nMémoires d'une Jeune Femme\nEugène Sue's Mathilde"
+          exec: "echo And then revenge is very good eaten cold, as the vulgar say ~ Eugène Sue, Mathilde: Mémoires d'une Jeune Femme"
 
       # Use the output from the `hello` step
       - name: Get the output time
