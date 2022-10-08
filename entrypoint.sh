@@ -19,7 +19,7 @@ function main() {
 time_start=$(date)
 
 # Run main entrypoint
-main "$@"
+main $@
 
 # Footer
 time_finish=$(date)
