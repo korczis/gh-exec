@@ -22,4 +22,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - "${{ inputs.exec }}"
+    - ${{ inputs.exec }}
