@@ -1,4 +1,4 @@
-# github executor 3000
+# gh-exec-3000
 
 Simple but powerfull.
 
