@@ -1,20 +1,25 @@
-# action.yml
-name: 'GH Exec'
+name: 'Github Executor 3000'
 
 description: 'Execute "<you-name-it>" as the github action / step'
 
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  # id of input - executed thing :-)
+  exec:
+    description: 'What to execute'
     required: true
-    default: 'World'
+    default: 'echo Hello World!'
 
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  # id of output - start timestamp
+  time_start:
+    description: 'The time we started'
+
+  # id of output - finish timestamp
+  time_finish:
+    description: 'The time we finished'
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.exec }}

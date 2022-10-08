@@ -5,6 +5,7 @@ FROM elixir:1.14-alpine
 RUN apk update && \
   apk upgrade --no-cache && \
   apk add --no-cache \
+    bash \
     build-base \
     cargo \
     erlang-dev \
@@ -15,7 +16,10 @@ RUN apk update && \
     rust \
     tar \
     yarn \
+    tree \
     --virtual build-dependencies
+
+
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh

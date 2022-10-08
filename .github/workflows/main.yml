@@ -14,8 +14,8 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          who-to-greet: 'Mona the Octocat'
+          exec: "echo And then revenge is very good eaten cold, as the vulgar say!\n\nMémoires d'une Jeune Femme\nEugène Sue's Mathilde"
 
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "The time we started was ${{ steps.hello.outputs.time_stat }}"
